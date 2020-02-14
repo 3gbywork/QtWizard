@@ -19,7 +19,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    auto wizard = new QtWizard();
+    auto wizard = new QtWizard(this);
     wizard->addPage(new QTextEdit(), tr("test1"), tr("sub title"));
     wizard->addPage(new QTextEdit(), tr("test2"), tr("sub title"));
     wizard->addPage(new QTextEdit(), tr("test3"), tr("sub title"));
